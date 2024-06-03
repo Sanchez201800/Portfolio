@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Distance {
+    public static void main(String[] args) {
+        // Create a Scanner object for reading input from the user
+        Scanner sc = new Scanner(System.in);
+
+        // Variables to store the speed and time inputted by the user
+        int speed, time;
+
+        // Prompt the user for the speed of the vehicle and read the input
+        System.out.print("Enter vehicle speed (in mph): ");
+        speed = sc.nextInt();
+        
+        // Validate that the speed entered is not negative
+        // If the speed is negative, repeat the prompt until a valid value is entered
+        while (speed < 0) {
+            System.out.print("Enter vehicle speed (in mph): ");
+            speed = sc.nextInt();
+        }
+
+        // Prompt the user for the time the vehicle has traveled and read the input
+        System.out.print("Enter traveling time (in hours): ");
+        time = sc.nextInt();
+        
+        // Validate that the time entered is greater than or equal to 1
+        // If the time is less than 1, repeat the prompt until a valid value is entered
+        while (time < 1) {
+            System.out.print("Enter traveling time (in hours): ");
+            time = sc.nextInt();
+        }
+
+        // Calculate the distance traveled for each hour and display the result
+        for (int i = 1; i <= time; i++) {
+            int distance = speed * i;
+            System.out.println("After " + i + " hour(s) the distance is " + distance + " miles.");
+        }
+    }
+}
