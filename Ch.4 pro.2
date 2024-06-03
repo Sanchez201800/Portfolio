@@ -1,0 +1,15 @@
+import java.io.*;
+
+public class WriteFile
+{
+   public static void main(String[] args) throws IOException
+   {
+      try (PrintWriter outputFile = new PrintWriter("numbers.txt"))
+      {
+         for (int num = 1; num < 50; num++)
+         {
+            outputFile.println(num);
+         }
+      }      
+   }
+}
