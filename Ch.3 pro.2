@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class SoftwareSales
+{
+    public static void main( String[] args )
+    {
+        Scanner in = new Scanner( System.in );
+
+        System.out.print( "Enter number of packages purchased: " );
+        int count = in.nextInt();
+
+        float discount = (float) (0.0 / 100);
+
+        if( count < 10 )
+        {
+            // no discount
+        }
+        else if( count <20 )
+        {
+            discount = (float) (20.0 / 100);
+        }
+        else if( count < 50 )
+        {
+            discount = (float) (30.0 / 100);
+        }
+        else if( count < 100 )
+        {
+            discount = (float) (40.0 / 100);
+        }
+        else
+        {
+            discount = (float) (50.0 / 100);
+        }
+
+        float costBeforeDiscount = count * 99;
+        float amountOfDiscount = costBeforeDiscount * discount;
+        float finalCost = costBeforeDiscount - amountOfDiscount;
+
+        System.out.printf( "Your discount is: $%.2f\n", amountOfDiscount );
+        System.out.printf( "Your total is: $%.2f\n", finalCost );
+
+    }
+}
