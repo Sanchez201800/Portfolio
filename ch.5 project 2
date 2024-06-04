@@ -1,0 +1,25 @@
+import java.util.Scanner; // import the Scanner class from the java.util package
+
+public class Method_showChar { // define a public class named Method_showChar
+    
+    public static void main(String[] args) { // define the main method, which is the entry point of the program
+        
+        Scanner input = new Scanner(System.in); // create a new Scanner object named input that reads input from the console
+        
+        System.out.print("Enter a line of text: "); // print a message asking the user to enter a line of text
+        String text = input.nextLine(); // read a line of text from the console using the nextLine method of the Scanner class, and store it in a String variable named text
+        
+        System.out.print("Enter your index: "); // print a message asking the user to enter an index
+        int index = input.nextInt(); // read an integer from the console using the nextInt method of the Scanner class, and store it in an int variable named index
+        
+        showChar(text, index); // call the showChar method with the text and index variables as arguments
+        
+    }
+    
+    public static void showChar(String text, int index) { // define a public static method named showChar that takes a String and an int as input
+        
+        System.out.println(text.charAt(index)); // print the character at the specified index in the input String using the charAt method of the String class
+        
+    }
+    
+}
