@@ -1,0 +1,4 @@
+if s.endswith('ism'):
+  status = True
+else:
+  status = False

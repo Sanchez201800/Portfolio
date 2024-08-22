@@ -1,0 +1,1 @@
+print(f"{amount1:8.2f}{amount2:10.1f}") 

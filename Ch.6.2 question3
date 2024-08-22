@@ -1,0 +1,25 @@
+#open files
+f=open("data.txt","r")
+plus=open("dataplus.txt","w")
+minus = open("dataminus.txt","w")
+zero = open("zeros.txt","w")
+#count for zeros
+countZero = 0
+#read all lines
+lines = f.readlines()
+for i in lines:
+  #extract number
+  num = int(i.strip())
+  #if negative number
+  if num < 0:
+    minus.write(str(num) + "\n")
+  #if positive number
+  elif num > 0:
+    plus.write(str(num)+"\n")
+    #if zero
+  else:
+    countZero =countZero +1
+zero.write(str(countZero))
+plus.close()
+minus.close()
+zero.close()

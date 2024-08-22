@@ -1,0 +1,9 @@
+# Define the recipe
+recipe = {
+  'sugar': 1.5,
+  'butter': 1.0,
+  'flour': 2.75
+}
+
+# Number of cookies the recipe makes
+recipe_yield = 48

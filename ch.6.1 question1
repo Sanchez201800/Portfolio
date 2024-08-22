@@ -1,0 +1,7 @@
+asia = open('asia_sales.txt', 'w')
+
+europe = open('europe_sales.txt', 'w')
+
+africa = open('africa_sales.txt', 'w')
+
+latin = open('latin_america_sales.txt', 'w')

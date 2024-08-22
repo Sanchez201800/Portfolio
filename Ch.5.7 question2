@@ -1,0 +1,1 @@
+cube_volume = to_the_power_of(cube_side, 3)

@@ -1,0 +1,2 @@
+office_a_c = AirConditioner()
+office_a_c.turn_on()

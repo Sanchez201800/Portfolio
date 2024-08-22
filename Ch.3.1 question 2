@@ -1,0 +1,3 @@
+max = x
+if y > max :
+    max = y

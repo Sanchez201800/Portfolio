@@ -1,0 +1,19 @@
+class Car: # Defining class Car 
+    def __init__(self,_year_model,_make): # Defining constructor
+        self._year_model=_year_model
+        self._make=_make
+        self._speed=0 
+    def accelerate(self): # Defining accelerate method
+        self._speed=self._speed+5 
+    def brake(self): # Defining brake method
+        self._speed=self._speed-5 
+    def get_speed(self): # Defining get_speed method
+        return self._speed
+if __name__=="__main__": # Defining main function
+    car=Car("2022A3","Audi") # Creating object
+    for i in range(5): # Loop to accelerate the car for 5 times
+        car.accelerate()
+        print(car.get_speed())
+    for i in range(5): # Loop to brake the car for 5 times
+        car.brake()
+        print(car.get_speed())

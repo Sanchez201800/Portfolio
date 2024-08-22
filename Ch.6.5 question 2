@@ -1,0 +1,5 @@
+if num_dogs + num_cats == 0:
+    print("unavailable")
+else:
+    per_pet_budget = budget / (num_dogs + num_cats)
+    print("{:.2f}".format(per_pet_budget))

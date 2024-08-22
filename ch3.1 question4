@@ -1,0 +1,2 @@
+if outside_temperature > 90:
+    shelf_life -= 4

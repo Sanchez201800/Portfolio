@@ -1,0 +1,19 @@
+
+
+#taking number of males and females as input from user
+males = int(input('Enter number of males:'))
+females = int(input('Enter number of females:'))
+
+# calculating the total 
+total = males + females
+
+# calculating the percentage of male otters
+males_percent = (males / total) * 100
+females_percent = (females / total) * 100
+
+
+
+# using 'fstring' for formatting the string and 
+# round function for converting the percentage into whole number
+print(f"Percent males: {round(males_percent)}%")
+print(f"Percent females: {round(females_percent)}%")

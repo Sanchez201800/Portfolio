@@ -1,0 +1,4 @@
+i = lo
+while i <= hi:
+    result += i
+    i += 1

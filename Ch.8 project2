@@ -1,0 +1,15 @@
+def capitalize_sentences(sentence):
+  # Split the input string into sentences
+  sentences = sentence.split('. ')
+  
+  # Capitalize the first character of each sentence
+  sentences = [s[0].upper() + s[1:] for s in sentences]
+  
+  # Join the sentences back together and return the result
+  return '. '.join(sentences)
+
+# Get a sentence from the user
+sentence = input('Enter sentence to be capitalized:')
+
+# Capitalize the sentences and print the result
+print(capitalize_sentences(sentence))

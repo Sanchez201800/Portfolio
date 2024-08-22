@@ -1,0 +1,21 @@
+class Alarm:
+    # Class variables
+    code = "93478"  # The deactivation code for the alarm
+    armed = True     # Boolean variable to track whether the alarm is activated or not
+
+    # Function to disarm the alarm
+    def disarm(self, user_code):
+        # Check if the user-provided code matches the deactivation code
+        if user_code == self.code:
+            # If the codes match, disarm the alarm by setting armed to False
+            self.armed = False
+            print("Alarm disarmed successfully.")
+        else:
+            # If the codes do not match, inform the user and keep the alarm armed
+            print("Incorrect code. Alarm remains armed.")
+
+# Create an instance of the Alarm class
+myAlarm = Alarm()
+
+# Call the disarm function with the code "93478"
+myAlarm.disarm("93478")

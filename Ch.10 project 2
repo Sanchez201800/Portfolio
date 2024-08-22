@@ -1,0 +1,16 @@
+class Employee:
+    def __init__(self, name, id_number, department, job_title):
+        self.name = name
+        self.id_number = id_number
+        self.department = department
+        self.job_title = job_title
+
+# Create three Employee objects
+susan = Employee("Susan Meyers", 47899, "Accounting", "Vice President")
+mark = Employee("Mark Jones", 39119, "IT", "Programmer")
+joy = Employee("Joy Rogers", 81774, "Manufacturing", "Engineer")
+
+# Print the data for each employee
+print(f"Name: {susan.name}\nID Number: {susan.id_number}\nDepartment: {susan.department}\nJob Title: {susan.job_title}\n")
+print(f"Name: {mark.name}\nID Number: {mark.id_number}\nDepartment: {mark.department}\nJob Title: {mark.job_title}\n")
+print(f"Name: {joy.name}\nID Number: {joy.id_number}\nDepartment: {joy.department}\nJob Title: {joy.job_title}\n")

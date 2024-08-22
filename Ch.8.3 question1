@@ -1,0 +1,4 @@
+if s.isupper():
+    status = True
+else:
+    status = False

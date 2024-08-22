@@ -1,0 +1,4 @@
+i = 5
+f = 2.4
+
+print("i=" + str(iVal), "f=" + str(fVal))

@@ -1,0 +1,6 @@
+# Assume that the 'add' function is already defined
+# euro_sales and asia_sales have assigned values
+
+# Call the 'add' function with euro_sales and asia_sales
+
+eurasia_sales = add(euro_sales, asia_sales)

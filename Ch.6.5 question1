@@ -1,0 +1,23 @@
+# Assuming x and y are already assigned
+
+try:
+
+   # Convert x and y to integers
+
+   x = int(x)
+
+   y = int(y)
+
+
+   # Calculate the sum
+
+   z = x + y
+
+except ValueError:
+
+   # Handle the case where x or y is not a valid integer
+
+   z = -1
+
+
+print("The sum is:", z)  # Output

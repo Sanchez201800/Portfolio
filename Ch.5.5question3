@@ -1,0 +1,2 @@
+def printGrade(grade):
+    print(f'Grade: {grade}')

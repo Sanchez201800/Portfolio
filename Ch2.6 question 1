@@ -1,0 +1,14 @@
+# Read an integer as input
+k = int(input()) 
+
+# Read a float as input
+d = float(input())
+
+# Read a string as input
+s = input()
+
+# display variables in reverse order
+print(s, d, k)
+
+# display variables in the original order
+print(k, d, s)

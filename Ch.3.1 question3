@@ -1,0 +1,6 @@
+if x <= y and x <= z:
+    min = x
+if y<=x and y<=z:
+    min = y
+if z<=x and z<=y:
+    min = z

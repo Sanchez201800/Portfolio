@@ -1,0 +1,41 @@
+#open both the files.
+
+infile = open("data1.txt", "r")
+
+plus = open("data2.txt", "w")
+
+#Iterate till the end of the file.
+
+while True:
+
+   
+
+     #Read the file line by line.
+
+     line = infile.readline()
+
+    
+
+     #Check for the end of the file.
+
+     if line == '':
+
+            break
+
+    
+
+     #Otherwise write the content of file
+
+     #data1 to data2.
+
+     else:
+
+            plus.write(line)
+
+print('data2.txt now contains the copy of data1.txt')
+
+#Close both the files.
+
+infile.close()
+
+plus.close()
